@@ -1,4 +1,4 @@
-Metadata-Version: 2.4
+Metadata-Version: 2.1
 Name: NetworkSecurity
 Version: 0.0.1
 Author: SujeetKumar
@@ -18,6 +18,3 @@ Requires-Dist: dagshub
 Requires-Dist: joblib
 Requires-Dist: fastapi
 Requires-Dist: uvicorn
-Dynamic: author
-Dynamic: author-email
-Dynamic: requires-dist
