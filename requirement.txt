@@ -9,4 +9,9 @@ pymongo[srv]
 dill
 pyaml
 mlflow
+dagshub
+joblib
+fastapi
+uvicorn
+
 -e .

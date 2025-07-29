@@ -1,5 +1,6 @@
 import os
 import sys
+import joblib
 
 from networksecurity.exception.exception import NetworkSecurityException
 from networksecurity.logging.logger import logging
@@ -23,6 +24,9 @@ from sklearn.ensemble import (
 )
 import mlflow
 
+import dagshub
+dagshub.init(repo_owner='sujeet123-dot', repo_name='networksecurity', mlflow=True)
+
 class ModelTrainer:
     def __init__(self,model_trainer_config:ModelTrainerConfig,data_transformation_artifact:DataTransformationArtifact):
         try:
@@ -40,7 +44,12 @@ class ModelTrainer:
             mlflow.log_metric("f1_score",f1_score)
             mlflow.log_metric("precision",precision_score)
             mlflow.log_metric("recall_score",recall_score)
-            mlflow.sklearn.log_model(best_model,"model")
+
+            # Save model to a file
+            os.makedirs("models", exist_ok=True)
+            model_path = "models/best_model.pkl"
+            joblib.dump(best_model, model_path)
+            mlflow.log_artifact(model_path, artifact_path="model")
         
     def train_model(self, X_train, y_train, x_test, y_test):
         models = {
