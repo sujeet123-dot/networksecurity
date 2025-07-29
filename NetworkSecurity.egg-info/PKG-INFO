@@ -1,4 +1,4 @@
-Metadata-Version: 2.1
+Metadata-Version: 2.4
 Name: NetworkSecurity
 Version: 0.0.1
 Author: SujeetKumar
@@ -13,3 +13,7 @@ Requires-Dist: matplotlib
 Requires-Dist: pymongo[srv]
 Requires-Dist: dill
 Requires-Dist: pyaml
+Requires-Dist: mlflow
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist

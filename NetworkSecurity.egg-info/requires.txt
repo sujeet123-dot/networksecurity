@@ -8,3 +8,4 @@ matplotlib
 pymongo[srv]
 dill
 pyaml
+mlflow

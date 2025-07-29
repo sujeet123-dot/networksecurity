@@ -1,0 +1,29 @@
+[ 2025-07-29 10:22:10,899 ] 16 root - INFO - Initiate Data ingestion
+[ 2025-07-29 10:22:13,073 ] 64 root - INFO - Performed train test split on the dataframe
+[ 2025-07-29 10:22:13,073 ] 66 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[ 2025-07-29 10:22:13,073 ] 74 root - INFO - Exporting train and test file path.
+[ 2025-07-29 10:22:13,152 ] 83 root - INFO - Exported train and test file path.
+[ 2025-07-29 10:22:13,153 ] 18 root - INFO - Data Initiation Completed
+[ 2025-07-29 10:22:13,159 ] 23 root - INFO - Initiate the data vaildation
+[ 2025-07-29 10:22:13,226 ] 31 root - INFO - Required number of columns: 2
+[ 2025-07-29 10:22:13,226 ] 32 root - INFO - Data frame has columns:31
+[ 2025-07-29 10:22:13,227 ] 31 root - INFO - Required number of columns: 2
+[ 2025-07-29 10:22:13,227 ] 32 root - INFO - Data frame has columns:31
+[ 2025-07-29 10:22:13,396 ] 25 root - INFO - Data Validation completed
+[ 2025-07-29 10:22:13,396 ] 28 root - INFO - Data Transformation started
+[ 2025-07-29 10:22:13,396 ] 61 root - INFO - Entered initaiate_data_transformation method of DataTransformation class
+[ 2025-07-29 10:22:13,396 ] 63 root - INFO - Starting data transformation
+[ 2025-07-29 10:22:13,426 ] 49 root - INFO - Entered get_data_transformation_object method of transforrmation class
+[ 2025-07-29 10:22:13,426 ] 52 root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[ 2025-07-29 10:22:13,440 ] 47 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-07-29 10:22:13,444 ] 51 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-07-29 10:22:13,444 ] 47 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-07-29 10:22:13,447 ] 51 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-07-29 10:22:13,448 ] 32 root - INFO - Data transformation completed
+[ 2025-07-29 10:22:13,448 ] 34 root - INFO - Model Training started
+[ 2025-07-29 10:27:02,801 ] 47 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-07-29 10:27:02,802 ] 51 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-07-29 10:27:02,803 ] 47 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-07-29 10:27:02,856 ] 51 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-07-29 10:27:02,856 ] 118 root - INFO - Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='trained_model\\model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=0.9909233811672836, precision_score=0.9882674218670983, recall_score=0.9935936546674802), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.9865596790371113, precision_score=0.9816367265469061, recall_score=0.9915322580645162))
+[ 2025-07-29 10:27:02,862 ] 39 root - INFO - Model Training artifact created
